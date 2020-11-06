@@ -1,0 +1,7 @@
+jupyter
+redis == 3.5.3
+requests
+PyYAML
+PyJWT
+pyusb
+pyserial
