@@ -32,4 +32,5 @@ RUN useradd -ms /bin/bash jupyter
 USER jupyter
 WORKDIR /home/jupyter
 
-CMD ["jupyter", "notebook", "--ip", "0.0.0.0", "--no-browser", "--port=8080" ]
+ENTRYPOINT ["jupyter", "notebook"]
+CMD [ "--ip", "0.0.0.0", "--no-browser", "--port=8080", "--NotebookApp.base_url", "/jupyter"  ]
