@@ -26,7 +26,10 @@ RUN wget https://archive.raspbian.org/raspbian.public.key -O - | apt-key add - &
 RUN touch /etc/modules
 RUN mkdir /etc/modprobe.d/
 RUN touch /etc/modprobe.d/raspi-blacklist.conf
-RUN apt-get update && apt-get install -y sense-hat
+RUN apt-get update && \
+    apt-get install -y \
+      sense-hat \
+      python3-rpi.gpio
 
 RUN useradd -ms /bin/bash jupyter
 USER jupyter
