@@ -5,8 +5,5 @@ PyYAML
 PyJWT
 pyusb
 pyserial
-<<<<<<< HEAD
 wiringpi2
-=======
 picamera
->>>>>>> d1ab89b043bbdc059ec247ed5f836264976ab1ad
