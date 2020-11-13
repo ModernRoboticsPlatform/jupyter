@@ -9,3 +9,4 @@ wiringpi2
 picamera
 smbus
 virtualenv
+RPi.GPIO
