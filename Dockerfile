@@ -13,7 +13,10 @@ RUN apt-get update && \
       software-properties-common \
       wget \
       git \
-      vim
+      vim \
+      libxml2-dev \
+      libxslt-dev
+
 
 COPY ./requirements.txt .
 RUN pip3 install --upgrade pip
